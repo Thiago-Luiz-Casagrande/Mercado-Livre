@@ -1,0 +1,259 @@
+body{
+    background-color: #eaebf1;
+}
+
+span{
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+}
+.direct{
+    margin-left: 2vw;
+    float: left;
+    display: inline-block;
+}
+
+.header{
+    height: 14vh;
+    background-color: #fbe304;
+}
+.headerHigh{
+height: 7vh;
+
+}
+#logoML{
+    margin-left: 5vw;
+    margin-top: 1vh;
+    height: 50px;
+    float: left;
+    
+}
+.searchBar{
+    width: 37vw;
+    padding: 1.5vh;
+    border-radius: 4px;
+    border-color: #eaebf1;
+    margin-left: 5vw;
+    margin-top: 1vh;
+    float: left;
+    background-image: url('./lupaBusca.png');
+    background-position: 4px ;
+    background-repeat: no-repeat;
+}
+.searchBar::placeholder{
+width: 20vw;
+padding-left: 3vw;
+}
+
+#meliMais{
+    margin-top: 2vh;
+    float: right;
+    margin-right: 5vw;
+    color: white;
+    width: 23vw;
+    height: 5vh;
+    background-color: purple;
+    text-align: center;
+    padding-top: 1vh;
+    border-radius: 30px;
+}
+.headerLow{
+    margin-left: 19vw;
+    font-size: 1vw;
+    float: left;
+}
+#country{
+    margin-left: 2vw;
+   background-color: #fbe304;
+   border: none;
+   border-radius: 5px;
+   
+}
+.body{
+    background-color: #eaebf1;
+    height: 86vh;
+}
+
+.conteudo{
+    margin-top: 10vh;
+    width: 80vw;
+    margin-left: 10vw;
+}
+
+
+.payOption{
+    height: 10vh;
+    width: 17vw;
+    background-color: white;
+    float: left;
+    font-size: 2.8vh;
+    padding-top: 3vh;
+    padding-left: 1vh;
+    font-weight: bold;
+    text-align: center;
+}
+.payDois{
+    border-left: 1px solid #eaebf1;
+}
+#lastOption{
+    height: 10vh;
+    width: 10vw;
+    margin-left: 68vw;
+    background-color: white;
+    border: 0 4px 4px 0;
+    text-align: center;
+    padding-top: 2vh;
+    font-size: 5vh;
+    font-weight: bold;
+}
+.products{
+    width: 15vw;
+    height: 40vh;
+    margin: 0 2.0vw;
+    background-color: white;
+    display: inline-block;
+    overflow: hidden;
+    float: left;
+    padding-left: 1vw;
+    border-radius: 5px;
+}
+.products:hover{
+    border: 2px solid rgb(156, 156, 156);
+    height: 50vh;
+    transition-timing-function: linear;
+    transition-duration: 0.3s;
+    
+
+}
+.enfase{
+    color: green;
+}
+.PostsCategoria{
+    margin-top: 65vh;
+    margin-left: 11vw;
+}
+
+.postUm{
+    width: 35vw;
+    height: 30vh;
+    background-color: white;
+    border-radius: 5px;
+    float: left;
+}
+
+#textoPost{
+    padding-top: 5vh;
+    font-weight: bold;
+}
+
+#imagemPanela{
+    margin-left: 1vw;
+    border-radius: 5px;
+    width: 13vw;
+    height: 13vw;
+    float: right;
+}
+
+.postDois{
+    width: 35vw;
+    height: 30vh;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 39vw;
+    overflow: hidden;
+}
+
+button{
+    width: 9vw;
+    height: 5vh;
+    font-weight: bold;
+    font-size: 1vw;
+    border: none;
+    color: white;
+    background-color: rgb(74, 74, 255);
+    border-radius: 5px;
+}
+button:hover{
+    transition-duration: 0.5s;
+    background-color: rgb(0, 0, 179);
+}
+.rodape{
+    width: 100%;
+    height: 15vh;
+}
+.end{
+    margin-top: 15vh;
+    width: 100%;
+    height: 30vh;
+    background-color: rgb(94, 94, 94);
+    text-align: center;
+}
+#direitos{
+    padding-top: 10vh;
+    color: white;
+    font-weight: bold;
+}
+.caminhoCategoria{
+    color: blue;
+    font-size: small;
+}
+.caminhoCat{
+    margin-top: 10vh;
+    margin-left: 5vw;
+}
+.conteudoCadeira{
+    margin-left: 5vw;
+    width: 90vw;
+    height: 180vh;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid rgb(219, 219, 219);
+    float: left;
+}
+#img1{
+    border: 2px solid blue;
+    border-radius: 5px;
+    margin-top: 3vh;
+}
+.imagensP{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    float: left;
+    margin-left: 3vh;
+}
+#imagemG{
+    margin-top: 10vh;
+    float: left;
+}
+.textoCadeira{
+    width: 35vw;
+}
+#sobretitulo{
+    margin-top: 3vh;
+}
+#tituloCadeira{
+    margin-top: 2vh;
+    font-weight: bold;
+    font-size: 4vh;
+}
+.preco{
+    margin-top: 2vh;
+    font-size: 8vh;
+}
+.centavos{
+    font-size: 4vh;
+}
+.seletorCor{
+    margin-top: 6vh;
+}
+.tituloInfo{
+    margin-top: 2vh;
+    font-weight: bold;
+}
+.infoProduto{
+    margin-top: 1vh;
+    margin-left: 39vw;
+    list-style-type: square;
+}

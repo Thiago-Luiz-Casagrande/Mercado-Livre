@@ -1,11 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mercado Livre Brasil</title>
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        html {
+            box-sizing: border-box;
+            font-size: 16px;
+            }
+
+            *, *:before, *:after {
+            box-sizing: inherit;
+            }
+
+            body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+            margin: 0;
+            padding: 0;
+            font-weight: normal;
+            }
+
+            ol, ul {
+            list-style: none;
+            }
+
+            img {
+            max-width: 100%;
+            height: auto;
+            }
+    </style>
 </head>
 <body>
-    
+    <section class="header">
+        <article class="headerHigh">
+            <img src="./logoML.jpg" id="logoML">
+            <input type="text" placeholder="Buscar produtos, marcas e muito mais..." class="searchBar">
+            <a id="meliMais" href="https://www.mercadolivre.com.br/assinaturas/melimais#origin=banner-menu&me.audience=all&me.bu=3&me.bu_line=26&me.component_id=banner_menu_web_ml&me.content_id=BANNER_MENU_PROMO_9_90_MELI_MAIS&me.flow=-1&me.logic=user_journey&me.position=0">Escolha seu plano <span>meli+</span> a partir de <span>R$9,90</span></a>
+        </article><br>
+        <article class="headerLow">
+            <select id="country" name="country">
+                <option value="australia">Categoria</option>
+                <option value="canada">Esporte</option>
+                <option value="usa">Eletronico</option>
+                <option value="usa">Moda</option>
+                <option value="usa">Esporte</option>
+                <option value="usa">Lazer</option>
+            </select>
+            <a class="direct">Ofertas</a>
+            <a class="direct">Cupons</a> 
+            <a class="direct">Supermercado</a>
+            <a class="direct">Moda</a> 
+            <a class="direct">Mercado Play</a>
+            <a class="direct">Vender</a> 
+            <a class="direct">Contato</a>
+            <a class="direct">Criar a sua conta</a>
+            <a class="direct">Entre</a>
+            <a class="direct">Compras</a>
+            <a class="direct">Carrinho</a>
+        </article>
+    </section>
+    <section class="body">
+        <section class="payOptions conteudo">
+            <p class="payOption">Pagamento rapido e seguro</p>
+            <p class="payOption payDois">Até 10 parcelas sem juros</p>
+            <p class="payOption">Parcelamento sem cartão</p>
+            <p class="payOption">Via Pix</p>
+            <p id="lastOption">+</p>
+        </section>
+        <section class="conteudo">
+            <div class="products"> 
+                <a class="proxPag" href="file:///C:/Users/thiag/Desktop/Curso%20DoDev/clone-mercado-livre/cadeira.html"><img src="cadeiraGamer.jpg" width="224" height="224"><br><br>
+                <h3>R$ 1.599,00</h3><br>
+                <h5>em <span class="enfase">10x R$159,90 sem juros</span></h5>
+                <h5>com <span class="enfase">Frete grátis</span></h5></a> 
+            </div>
+            <div class="products">
+                <img src="cpuGamer.jpg" width="224" height="224"><br><br>
+                <h3>R$ 1.299,00</h3><br>
+                <h5>em <span class="enfase">10x R$129,90 sem juros</span></h5>
+                <h5>com <span class="enfase">Frete grátis</span></h5> 
+            </div>
+            <div class="products">
+                <img src="foneOuvido.jpg" width="224" height="224"><br><br>
+                <h3>R$ 799,00</h3><br>
+                <h5>em <span class="enfase">10x R$79,90 sem juros</span></h5>
+                <h5>com <span class="enfase">Frete grátis</span></h5> 
+            </div>
+            <div class="products">
+                <br>
+                <img src="sansungA30.jpg" width="224" height="224"><br>
+                <h3>R$ 1.999,00</h3><br>
+                <h5>em <span class="enfase">10x R$199,90 sem juros</span></h5>
+                <h5>com <span class="enfase">Frete grátis</span></h5>
+            </div>
+        </section>
+        <section class="PostsCategoria">
+            <div class="postUm">
+                <a id="textoPost" class="direct">CASA RENOVADA <br><br>
+                ATÉ 50% OFF <br>
+                ATIVE OS CUPONS <br><br>
+                <button>VER MAIS</button></a>
+                <img src="panela.jpg" id="imagemPanela">    
+            </div>
+            <div class="postDois">
+                <a id="textoPost" class="direct">SNEAKERS <br><br>
+                ATÉ 50% OFF <br>
+                ATIVE OS CUPONS <br><br>
+                <button>VER MAIS</button></a>
+                <img src="tenis.jpg" id="imagemPanela">    
+            </div>
+        </section>
+        <section class="rodape">
+            <div class="end">
+                <h3 id="direitos">Direitos reservados ao Mercado Livre Brasil</h3>
+            </div>
+        </section>
+    </section>
 </body>
 </html>
