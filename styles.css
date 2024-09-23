@@ -1,7 +1,8 @@
 body{
     background-color: #eaebf1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
 }
-
 span{
     font-weight: bold;
 }
@@ -127,7 +128,7 @@ padding-left: 3vw;
 
 }
 .enfase{
-    color: green;
+    color: rgb(0, 184, 0);
 }
 .PostsCategoria{
     margin-top: 65vh;
@@ -195,12 +196,26 @@ button:hover{
     font-weight: bold;
 }
 .caminhoCategoria{
-    color: blue;
+    color: rgb(89, 89, 255);
     font-size: small;
+    font-weight: 100;
 }
 .caminhoCat{
     margin-top: 10vh;
     margin-left: 5vw;
+}
+.coluna1{
+    width: 37vw;
+    height: 100vh;
+    float: left;
+}
+.coluna2{
+    width: 27vw;
+    height: 100vh;
+    float: left;
+}
+.coluna3{
+    height: 100vh;
 }
 .conteudoCadeira{
     margin-left: 5vw;
@@ -215,16 +230,24 @@ button:hover{
     border: 2px solid blue;
     border-radius: 5px;
     margin-top: 3vh;
+    padding: 2px;
 }
 .imagensP{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     float: left;
     margin-left: 3vh;
 }
+.smallPicture{
+    border: 2px solid rgb(219, 219, 219);
+    border-radius: 5px;
+    padding: 2px;
+}
+
 #imagemG{
     margin-top: 10vh;
+    margin-left: 1vw;
     float: left;
 }
 .textoCadeira{
@@ -254,6 +277,25 @@ button:hover{
 }
 .infoProduto{
     margin-top: 1vh;
-    margin-left: 39vw;
     list-style-type: square;
+}
+.pagamento{
+    width: 25vw;
+    height: 100vh;
+    margin-top: 3vh;
+    margin-left: 64vw;
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 10px;
+}
+.textPay{
+    margin: 3vh 1.5vw;
+    font-size: 1.5vw;
+    font-weight: 100;
+}
+.linkEntrega{
+    font-size: 1.1vw;
+    color: rgb(66, 66, 255);
+}
+.afinado{
+    font-weight: 100;
 }
