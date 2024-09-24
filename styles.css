@@ -54,6 +54,7 @@ padding-left: 3vw;
     color: white;
     width: 23vw;
     height: 5vh;
+    font-size: 2.5vh;
     background-color: purple;
     text-align: center;
     padding-top: 1vh;
@@ -111,11 +112,11 @@ padding-left: 3vw;
 .products{
     width: 15vw;
     height: 40vh;
-    margin: 0 2.0vw;
+    margin: 0 2vw;
     background-color: white;
-    display: inline-block;
     overflow: hidden;
     float: left;
+    display: inline-block;
     padding-left: 1vw;
     border-radius: 5px;
 }
@@ -185,7 +186,7 @@ button:hover{
 }
 .end{
     margin-top: 15vh;
-    width: 100%;
+    width: 100vw;
     height: 30vh;
     background-color: rgb(94, 94, 94);
     text-align: center;
@@ -206,21 +207,21 @@ button:hover{
 }
 .coluna1{
     width: 37vw;
-    height: 100vh;
+    height: 120vh;
     float: left;
 }
 .coluna2{
     width: 27vw;
-    height: 100vh;
+    height: 120vh;
     float: left;
 }
 .coluna3{
-    height: 100vh;
+    height: 120vh;
 }
 .conteudoCadeira{
     margin-left: 5vw;
     width: 90vw;
-    height: 180vh;
+    height: 195vh;
     background-color: white;
     border-radius: 10px;
     border: 1px solid rgb(219, 219, 219);
@@ -243,6 +244,12 @@ button:hover{
     border: 2px solid rgb(219, 219, 219);
     border-radius: 5px;
     padding: 2px;
+}
+.smallPicture:hover{
+    border: 2px solid blue;
+}
+.clickimg1:hover{
+    
 }
 
 #imagemG{
@@ -279,9 +286,13 @@ button:hover{
     margin-top: 1vh;
     list-style-type: square;
 }
+#descProd{
+    margin-top: 1vh;
+}
+
 .pagamento{
     width: 25vw;
-    height: 100vh;
+    height: 115vh;
     margin-top: 3vh;
     margin-left: 64vw;
     border: 1px solid rgb(219, 219, 219);
@@ -323,4 +334,29 @@ button:hover{
 .botaoAddCarrinho{
     background-color: rgb(213, 213, 248);
     color: blue;
+}
+.textoPequeno{
+    font-size: 2.5vh;
+}
+.mercadoLider{
+    margin-top: 2vh;
+}
+#linha{
+    height: 1px;
+    width: 90%;
+    color: rgb(219, 219, 219)
+}
+.prodRelacionados{
+    margin: 5vh 3vw;
+}
+.rodapePag1{
+    width: 100vw;
+    height: 15vh;
+}
+.endPag1{
+    margin-top: 190vh;
+    width: 100vw;
+    height: 30vh;
+    background-color: rgb(94, 94, 94);
+    text-align: center;
 }
