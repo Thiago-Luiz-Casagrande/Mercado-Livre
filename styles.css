@@ -299,3 +299,28 @@ button:hover{
 .afinado{
     font-weight: 100;
 }
+.negrito{
+    font-weight: bold;
+    font-size: 3vh;
+}
+#quantidade{
+   border: none;
+   font-size: 3vh;
+   font-weight: bold;
+}
+.botoesColuna3{
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 8vh;
+    margin-top: 1vh;
+    font-size: 2.5vh;
+}
+.botaoComprar{
+    background-color: blue;
+    color: white;
+}
+.botaoAddCarrinho{
+    background-color: rgb(213, 213, 248);
+    color: blue;
+}
