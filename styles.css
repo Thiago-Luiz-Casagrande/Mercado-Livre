@@ -205,12 +205,32 @@ button:hover{
     margin-top: 10vh;
     margin-left: 5vw;
 }
-.coluna1{
+        .caixa1.fixa {
+            position: fixed;
+            top: 0;
+            left: 5vw;
+            width: 37vw;
+        }
+        .caixa1.final {
+            position: absolute; /* Define a posição nova como absoluta */
+            margin-top: 40vh; /* Nova posição final no eixo Y */
+            left: 5vw; /* Nova margem à esquerda */
+            width: 37vw; /* Nova largura */
+          }
+        .caixa2.fixa2 {
+         margin-left: 37vw;
+        }
+        .caixa2.final2 {
+            position: absolute; /* Define a posição nova como absoluta */
+            margin-left: 37vw; /* Nova margem à esquerda */
+            width: 27vw; /* Nova largura */
+          }
+.caixa1{
     width: 37vw;
     height: 120vh;
     float: left;
 }
-.coluna2{
+.caixa2{
     width: 27vw;
     height: 120vh;
     float: left;
@@ -360,3 +380,4 @@ button:hover{
     background-color: rgb(94, 94, 94);
     text-align: center;
 }
+  
