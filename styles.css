@@ -213,7 +213,7 @@ button:hover{
         }
         .caixa1.final {
             position: absolute; /* Define a posição nova como absoluta */
-            margin-top: 40vh; /* Nova posição final no eixo Y */
+            margin-top: 30vh; /* Nova posição final no eixo Y */
             left: 5vw; /* Nova margem à esquerda */
             width: 37vw; /* Nova largura */
           }
@@ -225,6 +225,7 @@ button:hover{
             margin-left: 37vw; /* Nova margem à esquerda */
             width: 27vw; /* Nova largura */
           }
+        
 .caixa1{
     width: 37vw;
     height: 120vh;
