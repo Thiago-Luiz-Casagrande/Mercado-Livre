@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras - Mercado Livre</title>
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        html {
+            box-sizing: border-box;
+            font-size: 16px;
+            }
+
+            *, *:before, *:after {
+            box-sizing: inherit;
+            }
+
+            body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+            margin: 0;
+            padding: 0;
+            font-weight: normal;
+            }
+
+            ol, ul {
+            list-style: none;
+            }
+
+            img {
+            max-width: 100%;
+            height: auto;
+            }
+    </style>
+</head>
+<body>
+    <section class="header">
+        <article class="headerHigh">
+            <a href="file:///C:/Users/thiag/Desktop/Curso%20DoDev/clone-mercado-livre/index.html"><img src="./logoML.jpg" id="logoML"></a>
+            <input type="text" placeholder="Buscar produtos, marcas e muito mais..." class="searchBar">
+            <a id="meliMais" href="https://www.mercadolivre.com.br/assinaturas/melimais#origin=banner-menu&me.audience=all&me.bu=3&me.bu_line=26&me.component_id=banner_menu_web_ml&me.content_id=BANNER_MENU_PROMO_9_90_MELI_MAIS&me.flow=-1&me.logic=user_journey&me.position=0">Escolha seu plano <span>meli+</span> a partir de <span>R$9,90</span></a>
+        </article><br>
+        <article class="headerLow">
+            <select id="country" name="country">
+                <option value="australia">Categoria</option>
+                <option value="canada">Esporte</option>
+                <option value="usa">Eletronico</option>
+                <option value="usa">Moda</option>
+                <option value="usa">Esporte</option>
+                <option value="usa">Lazer</option>
+            </select>
+            <a class="direct">Ofertas</a>
+            <a class="direct">Cupons</a> 
+            <a class="direct">Supermercado</a>
+            <a class="direct">Moda</a> 
+            <a class="direct">Mercado Play</a>
+            <a class="direct">Vender</a> 
+            <a class="direct">Contato</a>
+            <a class="direct">Criar a sua conta</a>
+            <a class="direct">Entre</a>
+            <a class="direct">Compras</a>
+            <a class="direct">Carrinho</a>
+        </article>
+    </section>
+
+    <section class="listaProdutos">
+        <div class="nomeLoja">
+            <input type="checkbox" id="checkLoja">
+            <p id="nomeDaLoja"><span id="negrito">Produtos de 2000DISTRIBUIDORA</span></p>
+        </div>
+        <div class="produto">
+
+        </div>
+        <div class="frete">
+            <p id="tituloFrete">Frete</p>
+            <div class="juncao"><p id="precofrete" >R$ </p><p id="valorFrete"></p></div>
+            
+        </div>
+        <div class="freteGratis">
+            <div class="barra-progresso">
+                <div class="barra-progresso-inner">
+                    <div class="bolinha"></div> <!-- Bolinha no fim da barra -->
+                </div>
+            </div><p id="tituloMiniFreteGratis">Frete grátis</p><br>
+            <p class="textFreteGratis">Adicione mais R$ 65 para conseguir frete grátis em produtos de <span  id="negrito">2000DISTRIBUIDORA</span>.</p>
+            <a class="textFreteGratis" id="maisItensDaLoja">Ver mais produtos deste vendedor ></a>
+        </div>
+    </section>
+    <section class="precoFinal">
+        <div>
+            <p class="tituloResumoCompra">Resumo da compra</p>
+            <hr>
+            <p class="linhasResumo">Produto</p>
+            <p class="precoProdutos">R$10</p>
+            <p class="linhasResumo">Frete</p>
+            <p class="precoProdutos">R$10</p>
+            <p class="linhasResumo">Inserir código de cupom</p><br><br>
+            <p class="totalResumo">Total</p>
+            <p class="precoProdutos">R$10</p>
+            <button class="botoesContinuarCompra">Continuar a compra</button>
+        </div>
+    </section>
+
+    <script src="carrinho.js"></script>
+</body>
+</html>    
