@@ -13,4 +13,4 @@ export class Produto{
     }
 }
 
-let produtosCarrinho = []
+export let produtosCarrinho = []

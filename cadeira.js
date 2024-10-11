@@ -1,24 +1,6 @@
 
 let corSelecionada;
-
-
-class Produto{
-    nome
-    preco
-    cor
-    quantidade
-    frete
-    constructor(nome,preco,cor,quantidade,frete){
-        this.nome = nome
-        this.preco = preco
-        this.cor = cor
-        this.quantidade = quantidade
-        this.frete = frete
-    }
-}
-
-
-
+import { Produto, produtosCarrinho } from "./index.js";
 
 
 //<img id="minhaImagem" src="fotosCadeira/cadeiraVerde.webp" width="40" height="40" >
@@ -141,7 +123,8 @@ botao.addEventListener('click', (event)=>{
         alert('Escolha uma cor para adcionar')
     }else{
         produtosCarrinho = new Produto('Cadeira', numeroConvertido, corSelecionada, quantidadeSelecionda, 30);
-        window.location.href = 'https://thiago-luiz-casagrande.github.io/Mercado-Livre/carrinho.html'; 
+        alert('Direcionando para o carrinho')
+        window.location.href = "https://thiago-luiz-casagrande.github.io/Mercado-Livre/carrinho.html"; 
     
     }
     
