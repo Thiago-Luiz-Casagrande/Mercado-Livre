@@ -141,7 +141,7 @@ botao.addEventListener('click', (event)=>{
         alert('Escolha uma cor para adcionar')
     }else{
         produtosCarrinho = new Produto('Cadeira', numeroConvertido, corSelecionada, quantidadeSelecionda, 30);
-        window.location.href = './carrinho.html'; 
+        window.location.href = 'https://thiago-luiz-casagrande.github.io/Mercado-Livre/carrinho.html'; 
     
     }
     
