@@ -1,4 +1,4 @@
-class Produto{
+export class Produto{
     nome
     preco
     cor
@@ -12,3 +12,5 @@ class Produto{
         this.frete = frete
     }
 }
+
+let produtosCarrinho = []

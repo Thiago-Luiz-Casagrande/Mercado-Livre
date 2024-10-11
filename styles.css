@@ -266,6 +266,11 @@ button:hover{
     border-radius: 5px;
     padding: 2px;
 }
+.ajusteImg{
+    padding: 2px 4.5px;
+    height: 70px;
+    width: 65px;
+}
 .borda-azul{
     border: 3px solid blue;
     border-radius: 5px;

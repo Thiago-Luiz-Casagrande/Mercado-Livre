@@ -1,6 +1,26 @@
-//import { Produto } from "./index.js"
-let corSelecionada
- 
+
+let corSelecionada;
+
+
+class Produto{
+    nome
+    preco
+    cor
+    quantidade
+    frete
+    constructor(nome,preco,cor,quantidade,frete){
+        this.nome = nome
+        this.preco = preco
+        this.cor = cor
+        this.quantidade = quantidade
+        this.frete = frete
+    }
+}
+
+
+
+
+
 //<img id="minhaImagem" src="fotosCadeira/cadeiraVerde.webp" width="40" height="40" >
 //COLUNA 1
 
@@ -104,19 +124,25 @@ imagem10.addEventListener("click", function() {
 // COLUNA 3
 
 
-
-
 var botao = document.getElementById("addCarrinho")
 
 botao.addEventListener('click', (event)=>{
     event.preventDefault();
 
+
+    const numeroTexto = document.getElementById('precoProduto').textContent;
+    const numeroConvertido = Number(numeroTexto);
+
+
     var selecao = document.getElementById("quantidade");
     var quantidadeSelecionda = selecao.value;
 
-
-    alert(" Quantidade: "+quantidadeSelecionda +"   Cor: "+ corSelecionada)
+    
+    produtosCarrinho = new Produto('Cadeira', numeroConvertido, corSelecionada, quantidadeSelecionda, 30);
+    window.location.href = './carrinho.html';
 })
+
+
 
 
 function apagaBordas(){
