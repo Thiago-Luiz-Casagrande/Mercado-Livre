@@ -137,9 +137,14 @@ botao.addEventListener('click', (event)=>{
     var selecao = document.getElementById("quantidade");
     var quantidadeSelecionda = selecao.value;
 
+    if(corSelecionada != 'Preto/Verde' && corSelecionada != 'Preto/Azul' && corSelecionada != 'Preto/Branco' && corSelecionada != 'Preto/Preto' && corSelecionada != 'Branco/Rosa' ){
+        alert('Escolha uma cor para adcionar')
+    }else{
+        produtosCarrinho = new Produto('Cadeira', numeroConvertido, corSelecionada, quantidadeSelecionda, 30);
+        window.location.href = './carrinho.html'; 
     
-    produtosCarrinho = new Produto('Cadeira', numeroConvertido, corSelecionada, quantidadeSelecionda, 30);
-    window.location.href = './carrinho.html';
+    }
+    
 })
 
 
