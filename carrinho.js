@@ -1,11 +1,10 @@
-//import {apagaBordas} from './cadeira.js';
+//import {infoProduto} from './cadeira.js';
 
-let produtos = []
-console.log(produtosCarrinho)
+//var quantidadeSelecionda;
 
+alert('Começou o carrinho')
 
-
-
+//console.log(infoProduto[1])
 
 
 

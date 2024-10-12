@@ -1,7 +1,23 @@
 
-let corSelecionada;
-import { Produto, produtosCarrinho } from "./index.js";
 
+//import { Produto } from "./index.js";
+let produtosCarrinho = []
+var quantidadeSelecionda;
+
+export class Produto {
+    constructor(nome, preco, cor, quantidade, frete) {
+        this.nome = nome;
+        this.preco = preco;
+        this.cor = cor;
+        this.quantidade = quantidade;
+        this.frete = frete;
+    }
+}
+
+let corSelecionada;
+
+var infoProduto = []
+//export let infoProduto = []
 
 //<img id="minhaImagem" src="fotosCadeira/cadeiraVerde.webp" width="40" height="40" >
 //COLUNA 1
@@ -70,7 +86,7 @@ imagem10.addEventListener("click", function() {
         apagaBordas()
         imagem2.classList.toggle("borda-azul");
         document.getElementById("selectColor").innerHTML = "Cor: Preto/Azul";
-        corSelecionada = "Preto/Azul"
+        corSelecionada = "Preto/Azul";
     });
 
     var imagem3 = document.getElementById("Imagem3");
@@ -113,21 +129,29 @@ botao.addEventListener('click', (event)=>{
 
 
     const numeroTexto = document.getElementById('precoProduto').textContent;
-    const numeroConvertido = Number(numeroTexto);
+    var numeroConvertido = Number(numeroTexto);
 
+    var tituloproduto = document.getElementById("tituloCadeira");
+    var nomeProduto = tituloproduto.textContent;
 
     var selecao = document.getElementById("quantidade");
-    var quantidadeSelecionda = selecao.value;
+    quantidadeSelecionda = selecao.value;
 
-    if(corSelecionada != 'Preto/Verde' && corSelecionada != 'Preto/Azul' && corSelecionada != 'Preto/Branco' && corSelecionada != 'Preto/Preto' && corSelecionada != 'Branco/Rosa' ){
-        alert('Escolha uma cor para adcionar')
-    }else{
-        produtosCarrinho = new Produto('Cadeira', numeroConvertido, corSelecionada, quantidadeSelecionda, 30);
-        alert('Direcionando para o carrinho')
-        window.location.href = "https://thiago-luiz-casagrande.github.io/Mercado-Livre/carrinho.html"; 
-    
-    }
-    
+       produtosCarrinho = new Produto(
+            nomeProduto,
+            numeroConvertido,
+            corSelecionada,
+            quantidadeSelecionda,
+            30);
+        
+        console.log('Quantidade: '+quantidadeSelecionda)
+        console.log('Cor: '+corSelecionada)
+        console.log('Preço: '+ numeroConvertido)
+        console.log('Titulo: '+nomeProduto)
+
+        infoProduto = [nomeProduto,quantidadeSelecionda,corSelecionada,numeroConvertido]
+        console.log(infoProduto)
+        //window.location.href = "http://127.0.0.1:5501/carrinho.html";
 })
 
 
