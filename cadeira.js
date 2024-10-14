@@ -151,6 +151,7 @@ botao.addEventListener('click', (event)=>{
 
         infoProduto = [nomeProduto,quantidadeSelecionda,corSelecionada,numeroConvertido]
         console.log(infoProduto)
+        alert('Titulo: '+ nomeProduto + '   Cor: '+corSelecionada + '   Preço: R$'+ (numeroConvertido*quantidadeSelecionda) + '   Quantidade: '+ quantidadeSelecionda)
         //window.location.href = "http://127.0.0.1:5501/carrinho.html";
 })
 

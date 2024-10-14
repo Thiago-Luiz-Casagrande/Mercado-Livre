@@ -261,6 +261,9 @@ button:hover{
     float: left;
     margin-left: 3vh;
 }
+.primeiraimg{
+    margin-top: 3vh;
+}
 .minhaImagem{
     border: 2px solid rgb(219, 219, 219);
     border-radius: 5px;
