@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Simples</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        /* Estilos para o fundo do popup (overlay) */
+        .overlay {
+            display: none; /* Começa invisível */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Estilos para a caixa de popup */
+        .popup {
+            background: #fff;
+            padding: 20px;
+            width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            position: relative;
+        }
+
+        /* Botão para fechar o popup */
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: gray;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Botão para abrir o popup -->
+    <button onclick="abrirPopup()">Abrir Popup</button>
+
+    <!-- Estrutura do overlay e do popup -->
+    <div id="overlay" class="overlay">
+        <div class="popup">
+            <button class="close-btn" onclick="fecharPopup()">X</button>
+            <h2>Popup</h2>
+            <p>Opçoes de entregas:</p><br>
+            <a>Mercado Envios: <span id="linkEntrega">Grátis</span></a><br>
+            <a>Expresso: R$91,90</a><br>
+            <a>Correios: R$73,90</a><br>
+            <a>FedEx: R$153,90</a>
+        </div>
+    </div>
+
+    <script>
+        // Função para abrir o popup
+        function abrirPopup() {
+            document.getElementById("overlay").style.display = "flex";
+        }
+
+        // Função para fechar o popup
+        function fecharPopup() {
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+</body>
+</html>
