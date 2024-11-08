@@ -1,6 +1,6 @@
 body{
     background-color: #eaebf1;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Tahoma, sans-serif;
     font-weight: 100;
 }
 span{
@@ -539,4 +539,63 @@ float: left;
     margin-top: 2vh;
     margin-left: 4vh;
     font-size: 2.5vh;
+}
+.overlay {
+    display: none; /* Começa invisível */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Fundo semitransparente */
+    justify-content: center;
+    align-items: center;
+}
+/* Estilos para a caixa de popup */
+.popup {
+    background: #fff;
+    overflow-y: scroll;
+    padding: 20px;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    width: 50vw;
+    height: 80vh;
+    border-radius: 8px 0 0 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding-left: 5vw;
+    position: relative;
+}
+
+/* Botão para fechar o popup */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    padding: 8vh 10vh 0 0;
+    color: blue;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.seuEndereco{
+    background-color: rgb(239, 239, 239);
+    width: 90%;
+    height: 20vh;
+    border-radius: 5px;
+}
+.precoFreteEntrega{
+    float: right;
+    margin-right: 10%;
+}
+.tiposDeEntrega{
+    background-color: transparent;
+    color: blue;
+    border: none;
+    
+}.tiposDeEntrega:hover{
+    background-color: transparent;
 }

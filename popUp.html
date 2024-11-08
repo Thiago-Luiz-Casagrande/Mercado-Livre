@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Popup Simples</title>
-    <link rel="stylesheet" href="style.css">
     <style>
         
         /* Estilos para o fundo do popup (overlay) */
@@ -19,11 +18,16 @@
             justify-content: center;
             align-items: center;
         }
-
+        body{
+            font-family: Tahoma, sans-serif;
+        }
         /* Estilos para a caixa de popup */
         .popup {
             background: #fff;
+            overflow-y: scroll;
             padding: 20px;
+            margin-top: 10vh;
+            margin-bottom: 10vh;
             width: 50vw;
             height: 80vh;
             border-radius: 8px 0 0 8px;
@@ -48,10 +52,14 @@
             cursor: pointer;
         }
         .seuEndereco{
-            background-color: rgb(209, 209, 209);
-            width: 80%;
-            height: 10vh;
-            border-radius: 8px;
+            background-color: rgb(239, 239, 239);
+            width: 90%;
+            height: 20vh;
+            border-radius: 5px;
+        }
+        .precoFreteEntrega{
+            float: right;
+            margin-right: 10%;
         }
     </style>
 </head>
@@ -63,17 +71,28 @@
     <!-- Estrutura do overlay e do popup -->
     <div id="overlay" class="overlay">
         <div class="popup">
-            <button class="close-btn" onclick="fecharPopup()">X</button>
-            <h1>Opções de frete e retirada</h1>
-            <p>Calculamos os custos e prazos para este endereço:</p><br>
+            <div style="height: 130%;">
+                <button class="close-btn" onclick="fecharPopup()">X</button>
+            <p style="font-size: 28px;">Opções de frete e retirada</p>
+            <p >Calculamos os custos e prazos para este endereço:</p><br>
             <div class="seuEndereco">
+                <p>seuEndereco</p>
+            </div><br><br>
 
+            <p style="font-weight: bolder;">Receber Compra:</p><br>
+            <p class="precoFreteEntrega">R$<span>0</span></p>
+            <p>Chegará <span style="font-weight: bolder;">quarta-feira</span> no seu endereço</p><br>
+            
+            <hr style="color: gray; height: 1px;">
+            <p style="font-weight: bolder;">Retirar compra:</p><br>
+            <p class="precoFreteEntrega">R$<span>0</span></p>
+            <p>Retire a partir de <span style="font-weight: bolder;">segunda-feira</span> em uma agência Mercado Livre</p>
+            <a href="https://www.google.com.br/maps/" style="color: blue; font-size: 13px; text-decoration: none;">Ver mapa</a>
+
+<br><br>
             </div>
-            <a>Mercado Envios: <span id="linkEntrega">Grátis</span></a><br>
-            <a>Expresso: R$91,90</a><br>
-            <a>Correios: R$73,90</a><br>
-            <a>FedEx: R$153,90</a>
         </div>
+        
     </div>
 
     <script>

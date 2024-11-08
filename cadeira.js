@@ -1,5 +1,6 @@
 
 
+
 //import { Produto } from "./index.js";
 let produtosCarrinho = []
 var quantidadeSelecionda;
@@ -155,7 +156,14 @@ botao.addEventListener('click', (event)=>{
         //window.location.href = "http://127.0.0.1:5501/carrinho.html";
 })
 
+function abrirPopup() {
+    document.getElementById("overlay").style.display = "flex";
+}
 
+// Função para fechar o popup
+function fecharPopup() {
+    document.getElementById("overlay").style.display = "none";
+}
 
 
 function apagaBordas(){
