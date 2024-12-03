@@ -3,7 +3,8 @@
 
 //import { Produto } from "./index.js";
 let produtosCarrinho = []
-var quantidadeSelecionda;
+//var quantidadeSelecionda;
+const[quantidadeSelecionda, setQuantidadeSelecionada] = useState(0)
 
 export class Produto {
     constructor(nome, preco, cor, quantidade, frete) {
