@@ -4,7 +4,9 @@
 //import { Produto } from "./index.js";
 let produtosCarrinho = []
 //var quantidadeSelecionda;
-const[quantidadeSelecionda, setQuantidadeSelecionada] = useState(0)
+function app(){
+const [quantidadeSelecionda, setQuantidadeSelecionada] = useState(0);
+}
 
 export class Produto {
     constructor(nome, preco, cor, quantidade, frete) {
@@ -137,7 +139,7 @@ botao.addEventListener('click', (event)=>{
     var nomeProduto = tituloproduto.textContent;
 
     var selecao = document.getElementById("quantidade");
-    quantidadeSelecionda = selecao.value;
+    setQuantidadeSelecionada(selecao.value);
 
        produtosCarrinho = new Produto(
             nomeProduto,
