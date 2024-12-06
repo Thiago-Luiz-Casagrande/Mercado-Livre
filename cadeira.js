@@ -4,9 +4,9 @@
 //import { Produto } from "./index.js";
 let produtosCarrinho = []
 //var quantidadeSelecionda;
-function app(){
 const [quantidadeSelecionda, setQuantidadeSelecionada] = useState(0);
-}
+const [corSelecionada, setcorSelecionada] = useState();
+
 
 export class Produto {
     constructor(nome, preco, cor, quantidade, frete) {
@@ -18,7 +18,6 @@ export class Produto {
     }
 }
 
-let corSelecionada;
 
 var infoProduto = []
 //export let infoProduto = []
