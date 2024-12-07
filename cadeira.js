@@ -6,6 +6,7 @@ let produtosCarrinho = []
 //var quantidadeSelecionda;
 const [quantidadeSelecionda, setQuantidadeSelecionada] = useState(0);
 const [corSelecionada, setcorSelecionada] = useState();
+const [endereco, setEndereco] = useState();
 
 
 export class Produto {
