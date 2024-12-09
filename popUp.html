@@ -65,14 +65,11 @@
 </head>
 <body>
 
-    <!-- Botão para abrir o popup -->
-    <button onclick="abrirPopup()">Abrir Popup</button>
-
     <!-- Estrutura do overlay e do popup -->
     <div id="overlay" class="overlay">
         <div class="popup">
             <div style="height: 130%;">
-                <button class="close-btn" onclick="fecharPopup()">X</button>
+                <button class="close-btn" onclick="">X</button>
             <p style="font-size: 28px;">Opções de frete e retirada</p>
             <p >Calculamos os custos e prazos para este endereço:</p><br>
             <div class="seuEndereco">
@@ -94,17 +91,5 @@
         </div>
         
     </div>
-
-    <script>
-        // Função para abrir o popup
-        function abrirPopup() {
-            document.getElementById("overlay").style.display = "flex";
-        }
-
-        // Função para fechar o popup
-        function fecharPopup() {
-            document.getElementById("overlay").style.display = "none";
-        }
-    </script>
 </body>
 </html>
