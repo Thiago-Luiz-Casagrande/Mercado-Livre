@@ -19,8 +19,7 @@ export class Produto {
     }
 }
 
-
-var infoProduto = []
+const [infoProduto, setInfoProduto] = useState('')
 //export let infoProduto = []
 
 //<img id="minhaImagem" src="fotosCadeira/cadeiraVerde.webp" width="40" height="40" >
