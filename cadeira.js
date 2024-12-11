@@ -110,7 +110,7 @@ imagem10.addEventListener("click", function() {
         apagaBordas()
         imagem4.classList.toggle("borda-azul");
         document.getElementById("selectColor").innerHTML = "Cor: Preto/Preto";
-        corSelecionada = "Preto/Preto"
+        setCorSelecionada("Preto/Preto")
     });
 
     var imagem5 = document.getElementById("Imagem5");
