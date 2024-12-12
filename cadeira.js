@@ -1,6 +1,6 @@
 
 
-
+import { prodCarrinho } from "./index.js";
 //import { Produto } from "./index.js";
 let produtosCarrinho = []
 //var quantidadeSelecionda;
