@@ -1,4 +1,6 @@
-<script>
+
+function pop(){
+    
                 window.onscroll = function() {
                   var caixa1 = document.getElementById("caixa1");
                   var caixa2 = document.getElementById("caixa2");
@@ -35,11 +37,12 @@
                     caixa2.classList.remove("final2");
                 }
                 };
-              </script>
+            }
 
+            function pop2(){
 
-              <script>
-                            // Função para abrir o popup
+            return (
+                                       // Função para abrir o popup
                             function abrirPopup() {
                                 document.getElementById("overlay").style.display = "flex";
                             }
@@ -48,10 +51,8 @@
                             function fecharPopup() {
                                 document.getElementById("overlay").style.display = "none";
                             }
-                        </script>
+                            
                     <button onclick="abrirPopup()" class="tiposDeEntrega">Mais formas de entrega</button><br><br>
-                        <script></script>
-
 
                         <div id="overlay" class="overlay">
                         <div class="popup">
@@ -76,3 +77,4 @@
                 <br><br>
                             </div>
                         </div>
+                        )}
