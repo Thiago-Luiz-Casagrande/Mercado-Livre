@@ -269,10 +269,14 @@ button:hover{
     border-radius: 5px;
     padding: 2px;
 }
+.minhaImagem:hover{
+    border: 2px solid #5353ff;
+}
 .ajusteImg{
+    margin-left: 5px;
     padding: 2px 4.5px;
     height: 70px;
-    width: 65px;
+    width: 60px;
 }
 .borda-azul{
     border: 3px solid blue;

@@ -1,25 +1,23 @@
 
 
-import { prodCarrinho } from "./index.js";
+//import { prodCarrinho } from "./index.js";
 //import { Produto } from "./index.js";
-let produtosCarrinho = []
-//var quantidadeSelecionda;
-const [quantidadeSelecionda, setQuantidadeSelecionada] = useState(0);
-const [corSelecionada, setcorSelecionada] = useState();
-const [endereco, setEndereco] = useState();
-
-
-export class Produto {
-    constructor(nome, preco, cor, quantidade, frete) {
-        this.nome = nome;
-        this.preco = preco;
-        this.cor = cor;
-        this.quantidade = quantidade;
-        this.frete = frete;
-    }
-}
-
-const [infoProduto, setInfoProduto] = useState('')
+//let produtosCarrinho = []
+////var quantidadeSelecionda;
+//const [quantidadeSelecionda, setQuantidadeSelecionada] = useState(0);
+//const [corSelecionada, setcorSelecionada] = useState();
+//const [endereco, setEndereco] = useState();
+//
+//export class Produto {
+//    constructor(nome, preco, cor, quantidade, frete) {
+//        this.nome = nome;
+//        this.preco = preco;
+//        this.cor = cor;
+//        this.quantidade = quantidade;
+//        this.frete = frete;
+//    }
+//}
+//const [infoProduto, setInfoProduto] = useState('')
 //export let infoProduto = []
 
 //<img id="minhaImagem" src="fotosCadeira/cadeiraVerde.webp" width="40" height="40" >
@@ -68,7 +66,6 @@ imagem10.addEventListener("click", function() {
 });
 
 //COLUNA 2
-
     // Seleciona a imagem pelo ID
     var imagem = document.getElementById("Imagem");
 
