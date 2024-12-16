@@ -27,6 +27,8 @@ var imagemExibida = document.getElementById("imagemG");
 
 var imagem6 = document.getElementById("Imagem6");
 
+const [cepUser, setCepUser] = document.getElementById("Imagem6");
+
 imagem6.addEventListener("click", function() {
     apagaBordasG()
     imagem6.classList.toggle("borda-azul");
